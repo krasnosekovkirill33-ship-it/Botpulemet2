@@ -1,1 +1,12 @@
+name: My Workflow
+on:
+  push:  # Запуск при push
+    branches: [ main ]
+  pull_request:  # Запуск при pull request
+    branches: [ main ]
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
